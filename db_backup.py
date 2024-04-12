@@ -49,7 +49,10 @@ def backup_mysql():
 
         backup_filename = f"backup_file_{current_datetime}.sql"
 
-        os.system(f"mysqldump -u israel -p deployguru > {backup_filename}")
+        # Read MySQL username from environment variable
+        mysql_username = os.getenv('MYSQL_USERNAME')
+
+        os.system(f"mysqldump -u {mysql_username} -p deployguru > {backup_filename}")
 
         # Send email notification for success
         send_email_notification(
