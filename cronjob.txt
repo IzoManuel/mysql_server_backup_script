@@ -1,1 +1,0 @@
-0 2 * * * /usr/bin/python3 /home/ubuntu/scripts/lab19_db_backup/db_backup.py
