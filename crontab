@@ -1,1 +1,1 @@
-* * * * * /usr/bin/python3 /home/ubuntu/scripts/lab19-db-backup/db_backup.py >> /home/ubuntu/scripts/lab19-db-backup/backup.log 2>&1
+0 2 * * * /usr/bin/python3 /home/ubuntu/scripts/lab19-db-backup/db_backup.py >> /home/ubuntu/scripts/lab19-db-backup/backup.log 2>&1
